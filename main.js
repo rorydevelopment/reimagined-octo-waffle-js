@@ -17,12 +17,14 @@ function callFunctions() {
 function clickTestFunction() {
     let myElement = document.getElementById("testId");
     myElement.innerHTML = "I told you it would change!"
+    listCars();
 }
 
 function listCars() {
     let list = getElementById("listCars").children;
     let count = list.length;
+    let output = getElementById("output");
     for(let i = 0; i < count; i++) {
-        console.log(list[i]);
+        output.innerHTML = "Car " + i + " is: " + list[i] + ", ";
     }
 }
