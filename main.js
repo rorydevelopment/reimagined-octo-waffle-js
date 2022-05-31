@@ -16,9 +16,9 @@ function clickTestFunction() {
 }
 
 function listCars() {
-    const list = getElementById("listCars").children;
+    const list = document.getElementById("listCars").children;
     const count = list.length;
-    let demoPara = getElementById("demo");
+    let demoPara = document.getElementById("demo");
     for(let i = 0; i < count; i++) {
         demoPara.innerHTML = demoPara.innerHTML + "Car " + i+1 + " is: " + list[i] + ", ";
     }
