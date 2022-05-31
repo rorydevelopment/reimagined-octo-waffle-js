@@ -1,14 +1,9 @@
 window.onload = callFunctions();
 
-console.log("Hello World!")
-
-for(let i = 0; i < 10; i++) {
-    console.log("This is number: " + i);
-}
-
 // this function will call specified
 // funcitons then the browser loads up
 function callFunctions() {
+    console.log("Hello World!");
     listCars();
 }
 
