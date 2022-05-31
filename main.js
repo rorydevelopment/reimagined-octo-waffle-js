@@ -21,10 +21,10 @@ function clickTestFunction() {
 }
 
 function listCars() {
-    let list = getElementById("listCars").children;
-    let count = list.length;
-    let output = getElementById("output");
+    const list = getElementById("listCars").children;
+    const count = list.length;
+    let demoPara = getElementById("demo");
     for(let i = 0; i < count; i++) {
-        output.innerHTML = "Car " + i + " is: " + list[i] + ", ";
+        demoPara.innerHTML = "Car " + i + " is: " + list[i] + ", ";
     }
 }
