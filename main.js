@@ -12,7 +12,7 @@ function callFunctions() {
     listCars();
 }
 
-// this function ois trigger on the click
+// this function will trigger on the click
 // event of the specified button
 function clickTestFunction() {
     let myElement = document.getElementById("testId");
@@ -25,6 +25,6 @@ function listCars() {
     const count = list.length;
     let demoPara = getElementById("demo");
     for(let i = 0; i < count; i++) {
-        demoPara.innerHTML = "Car " + i + " is: " + list[i] + ", ";
+        demoPara.innerHTML = demoPara.innerHTML + "Car " + i+1 + " is: " + list[i] + ", ";
     }
 }
